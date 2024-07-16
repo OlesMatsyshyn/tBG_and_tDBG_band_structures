@@ -6,11 +6,13 @@ clear all
 % Open it, and have side by side for the better understanding.
 
 %% Parameters, constants 
-theta  = 1.33 * pi / 180; % twist angle in radians
+theta  = 1 * pi / 180; % twist angle in radians
 valley = 1;               % valley index
 Delta  = 0;               % stagger potential induced by hBN 
 alpha  = 2135.4;          % meV, is the hbar*v_F/a; look after Eq.(2) in 
                           % section EFFECTIVE CONTINUUM MODEL
+
+theta_str = join(['\theta = ', num2str(theta*180/pi,'%4.2f')]);
 
 % The displayed band structure is along some path in k space
 % in this code its K_+ -> Gamma -> M -> K_-, with 3 intervals
@@ -135,7 +137,7 @@ gamma1 = 400; % meV 400
 gamma3 = 320; % meV 320
 gamma4 = 44;  % meV
 d_prime = 50; % meV
-d = 5;        % meV
+d = 20;       % meV
 
 v3 = (sqrt(3)/2)*gamma3;
 v4 = (sqrt(3)/2)*gamma4; 
@@ -261,12 +263,13 @@ for i = 1:height(Energy)
     set(gca,'xticklabel',[])
     box on
 end
+title(theta_str)
 axis([0 301 -80 100]);
 set(gca,'XTick',[0, k_size_K_to_Gamma,...
                   k_size_Gamma_to_M+k_size_K_to_Gamma, k_length]);
 xlim([0 k_length])
-ylim([-50 65])
-set(gca,'YTick',-300:10:300);
+ylim([-50 100])
+set(gca,'YTick',-300:50:300);
 set(gca,'XTickLabel',...
    {'$\rm\bar{K}$';'$\bar{\Gamma}$';'$\rm\bar{M}$';'$\rm\bar{K}^\prime$'}); 
 set(gca,'TickLabelInterpreter','latex')
