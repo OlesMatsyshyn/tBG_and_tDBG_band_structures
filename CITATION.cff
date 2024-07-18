@@ -1,0 +1,8 @@
+@software{Matsyshyn_tDBG_2024,
+  author = {Matsyshyn, Oles},
+  doi = {10.5281/zenodo.1234},
+  title = {{tBG/tDBG effective continuum band structures}},
+  url = {https://github.com/OlesMatsyshyn/tBG_and_tDBG_band_structures},
+  version = {1.00},
+  year = {2024}
+}
