@@ -6,7 +6,7 @@ clear all
 % Open it, and have side by side for the better understanding.
 
 %% Parameters, constants 
-theta  = 1 * pi / 180; % twist angle in radians
+theta  = 1.0 * pi / 180; % twist angle in radians
 valley = 1;               % valley index
 Delta  = 0;               % stagger potential induced by hBN 
 alpha  = 2135.4;          % meV, is the hbar*v_F/a; look after Eq.(2) in 
@@ -224,10 +224,10 @@ for iK = 1 : k_length
 
        % We define the momentum as in Eq.(2) and see the paragraph before 
        % Eq.(4) of the section "EFFECTIVE CONTINUUM MODEL" 
-       % k in layer top
-       kl1 = R1 * (k_now - K1_moire + m(i,1) * G1M + m(i,2) * G2M); 
+       % k in layer top, rotation of k vectors is opposite to a
+       kl1 = R2 * (k_now - K1_moire + m(i,1) * G1M + m(i,2) * G2M); 
        % k in layer bot
-       kl2 = R2 * (k_now - K2_moire + m(i,1) * G1M + m(i,2) * G2M); 
+       kl2 = R1 * (k_now - K2_moire + m(i,1) * G1M + m(i,2) * G2M); 
        
        % Diagonal components of the blocks
        H1(4*i-3:4*i,4*i-3:4*i) = [ H0(kl1)+3*s0*d/2, S(kl1)'              ;
