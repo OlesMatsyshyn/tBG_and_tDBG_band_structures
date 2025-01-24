@@ -232,9 +232,9 @@ for al = 0.4:0.005:0.7
            % We define the momentum as in Eq.(2) and see the paragraph before 
            % Eq.(4) of the section "EFFECTIVE CONTINUUM MODEL" 
            % k in layer top
-           kl1 = R1 * (k_now - K1_moire + m(i,1) * G1M + m(i,2) * G2M); 
+           kl1 = R2 * (k_now - K1_moire + m(i,1) * G1M + m(i,2) * G2M); 
            % k in layer bot
-           kl2 = R2 * (k_now - K2_moire + m(i,1) * G1M + m(i,2) * G2M); 
+           kl2 = R1 * (k_now - K2_moire + m(i,1) * G1M + m(i,2) * G2M); 
            
            % Diagonal components of the blocks
            H1(4*i-3:4*i,4*i-3:4*i) = [ H0(kl1)+3*s0*d/2, S(kl1)'              ;
