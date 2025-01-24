@@ -14,14 +14,17 @@ To generate the band structure for twisted bilayer graphene, run the script `TBG
 The following papers were instrumental in the development and understanding of the TBG model:
 
 - **A1.** Maximally Localized Wannier Orbitals and the Extended Hubbard Model for Twisted Bilayer Graphene  
+
   *Physical Review X 8, 031087 (2018)*  
   [Read the paper here](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.8.031087)
 
 - **A2.** Moiré Bands in Twisted Double-Layer Graphene
+
   *PNAS 108 (30) 12233-12237*
   [Read the paper here](https://www.pnas.org/doi/10.1073/pnas.1108174108)
 
 - **A3.** Graphene Bilayer with a Twist: Electronic Structure
+
   *Physical Review Letters 99, 256802*  
   [Read the paper here](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.99.256802)
 
@@ -41,10 +44,12 @@ To generate the band structure for twisted double-bilayer graphene, run the scri
 The following resources were critical for understanding and building the TDBG model:
 
 - **B1.** Berry Curvature Dipole Senses Topological Transition in a Moiré Superlattice
-  *Nature Physics volume 18, pages765–770 (2022)*  
+
+  *Nature Physics volume 18, pages 765–770 (2022)*  
   [Read the paper here](https://www.nature.com/articles/s41567-022-01606-y)
 
 - **B2.** Microscopic Pairing Mechanism, Order Parameter, and Disorder Sensitivity in Moiré Superlattices: Applications to Twisted Double-Bilayer Graphene
+
   *Physical Review B 102, 064501*  
   (Focus on Appendix A; the code reproduces FIG. 5 of this paper)  
   [Read the paper here](https://arxiv.org/pdf/2001.07716)
