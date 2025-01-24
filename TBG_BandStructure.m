@@ -210,9 +210,9 @@ for iK = 1 : k_length
        % We define the momentum as in Eq.(2) and see the paragraph before 
        % Eq.(4) of the section "EFFECTIVE CONTINUUM MODEL" 
        % k in layer 1
-       kl1 = Rm * (k_now - K1_moire + m(i,1) * G1M + m(i,2) * G2M); 
+       kl1 = Rp * (k_now - K1_moire + m(i,1) * G1M + m(i,2) * G2M); 
        % k in layer 2
-       kl2 = Rp * (k_now - K2_moire + m(i,1) * G1M + m(i,2) * G2M); 
+       kl2 = Rm * (k_now - K2_moire + m(i,1) * G1M + m(i,2) * G2M); 
        
        % Diagonal components of the blocks
        H1(2*i-1:2*i,2*i-1:2*i) =...

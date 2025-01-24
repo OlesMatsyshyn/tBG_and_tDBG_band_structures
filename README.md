@@ -1,70 +1,60 @@
-#  Twisted Multilayers
+# Twisted Multilayers
 
-   I find that codes for simple twisted multilayers have to be open-access
-   
-   This repository went public with the publication of the paper it was used for
-   
-   If you want me to feel good, cite it:
-   
-   Or acknowledge the shared code.
-   
-## Section A. Twisted Bilayer Graphene
+This repository contains open-access codes for simulating simple twisted multilayer graphene systems. The repository was made public upon the submission of the associated research paper.
 
-To generate the Band Structure for the Twisted Bilayer Graphene 
-run TBG_BandStructure.m in Matlab
+If you find this repository useful, please consider citing it or acknowledging the shared code in your work. Your support is greatly appreciated.
 
-### We had three papers to learn things from:
-A1. Maximally Localized Wannier Orbitals and the Extended Hubbard Model for
-    Twisted Bilayer Graphene. PHYSICAL REVIEW X 8, 031087 (2018)
-    
-    https://journals.aps.org/prx/abstract/10.1103/PhysRevX.8.031087
+---
 
-A2. Moiré bands in twisted double-layer graphene
+## Section A: Twisted Bilayer Graphene (TBG)
 
-    https://www.pnas.org/doi/10.1073/pnas.1108174108
+To generate the band structure for twisted bilayer graphene, run the script `TBG_BandStructure.m` in MATLAB.
 
-A3. Graphene bilayer with a twist: eletronic struture
+### Relevant References:
+The following papers were instrumental in the development and understanding of the TBG model:
 
-    https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.99.256802
+- **A1.** Maximally Localized Wannier Orbitals and the Extended Hubbard Model for Twisted Bilayer Graphene  
+  *Physical Review X 8, 031087 (2018)*  
+  [Read the paper here](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.8.031087)
 
-I thank hujinxin1996 for his codes that were used for bench-markings:
+- **A2.** Moiré Bands in Twisted Double-Layer Graphene  
+  [Read the paper here](https://www.pnas.org/doi/10.1073/pnas.1108174108)
 
-https://github.com/hujinxin1996/twisted-bilayer-graphene
+- **A3.** Graphene Bilayer with a Twist: Electronic Structure  
+  [Read the paper here](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.99.256802)
 
-Comments are such as those to aid you in the digestion of the Ref.[A1]. In the code
-Ref.[A1] is heavily cited. Code reproduces FIG2a of Ref.[A1].
+Special thanks to [hujinxin1996](https://github.com/hujinxin1996/twisted-bilayer-graphene) for providing benchmark codes that were invaluable during this project. The MATLAB code heavily references Ref. [A1] and successfully reproduces FIG. 2a from this reference.
 
-In case of issue spotting, please get in touch with me: oles.matsyshyn@gmail.com
+For any issues or questions, feel free to contact me at: **oles.matsyshyn@gmail.com**
 
-## Section B. Twisted Double Bilayer Graphene
+---
 
-The main objective of this project was to develop the code for the twisted 
-double-bilayer graphene. The TBG code served as a base for the TDBG code.
+## Section B: Twisted Double Bilayer Graphene (TDBG)
 
-To generate the Band Structure for the Twisted double-double-bilayer graphene 
-run TBG_BandStructure.m in Matlab
+The primary goal of this project was to develop code for twisted double-bilayer graphene (TDBG). The TBG code served as the foundation for this development. 
 
-### As suggested by my PI, I started digging from the paper:
-B1. Berry curvature dipole senses topological transition in a moiré superlattice
+To generate the band structure for twisted double-bilayer graphene, run the script `TDBG_BandStructure.m` in MATLAB.
 
-    https://www.nature.com/articles/s41567-022-01606-y
+### Key References:
+The following resources were critical for understanding and building the TDBG model:
 
-### Astonishingly, I found the paper with Koshino's notations that we used to develop the code:
-B2. Microscopic pairing mechanism, order parameter, and disorder sensitivity in moiré
-    superlattices: Applications to twisted double-bilayer graphene
-    Our interest is in Appendix A. Code reproduces FIG5 of Ref.[B2]
-    
-    https://arxiv.org/pdf/2001.07716
+- **B1.** Berry Curvature Dipole Senses Topological Transition in a Moiré Superlattice  
+  [Read the paper here](https://www.nature.com/articles/s41567-022-01606-y)
 
-   This is essentially it, code works.
+- **B2.** Microscopic Pairing Mechanism, Order Parameter, and Disorder Sensitivity in Moiré Superlattices: Applications to Twisted Double-Bilayer Graphene  
+  (Focus on Appendix A; the code reproduces FIG. 5 of this paper)  
+  [Read the paper here](https://arxiv.org/pdf/2001.07716)
 
-### Another usefull readings could be:
-B3. Moir'e Flat Bands in Twisted Double Bilayer Graphene
+### Additional Recommended Readings:
+For further insights, consider exploring the following:
 
-    https://arxiv.org/pdf/1906.00623
-    
-B4. Tunable bandwidths and gaps in twisted double bilayer graphene system on the verge
-    of correlations 
-    
-    https://arxiv.org/pdf/2001.09916
+- **B3.** Moiré Flat Bands in Twisted Double Bilayer Graphene  
+  [Read the paper here](https://arxiv.org/pdf/1906.00623)
+
+- **B4.** Tunable Bandwidths and Gaps in Twisted Double Bilayer Graphene Systems on the Verge of Correlations  
+  [Read the paper here](https://arxiv.org/pdf/2001.09916)
+
+---
+
+This concludes the key information about the repository. The codes have been thoroughly tested and are operational.
 
