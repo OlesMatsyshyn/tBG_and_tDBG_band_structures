@@ -1,6 +1,6 @@
 # Twisted Multilayers
 
-This repository contains open-access codes for simulating simple twisted multilayer graphene systems. The repository was made public upon the publication of the associated research paper.
+This repository contains open-access codes for simulating simple twisted multilayer graphene systems. 
 
 If you find this repository useful, please consider citing it or acknowledging the shared code in your work. Your support is greatly appreciated.
 
